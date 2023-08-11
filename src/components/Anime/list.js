@@ -9,7 +9,7 @@ import {
 
 const {width, height} = Dimensions.get('window');
 const List = ({title, data}) => {
-  let movieName = 'One Piece';
+  let animeName = 'One Piece';
   return (
     <View className="mb-8 space-y-4">
       <View className="flex-row mx-4 justify-between items-center">
@@ -23,7 +23,7 @@ const List = ({title, data}) => {
         </TouchableOpacity>
       </View>
 
-      {/* Movie Row */}
+      {/* Anime Row */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -43,9 +43,9 @@ const List = ({title, data}) => {
                   className="rounded-xl"
                 />
                 <Text>
-                  {movieName.length > 14
-                    ? movieName.slice(0, 14) + '...'
-                    : movieName}
+                  {animeName.length > 14
+                    ? animeName.slice(0, 14) + '...'
+                    : animeName}
                 </Text>
               </View>
             </TouchableWithoutFeedback>

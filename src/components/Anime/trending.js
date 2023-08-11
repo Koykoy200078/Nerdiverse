@@ -12,7 +12,7 @@ import {useNavigation} from '@react-navigation/native';
 import {ROUTES} from '../..';
 
 const {width, height} = Dimensions.get('window');
-const MovieCard = ({item, onPress}) => {
+const Card = ({item, onPress}) => {
   return (
     <TouchableWithoutFeedback onPress={() => onPress(item)}>
       <Image
@@ -32,7 +32,7 @@ const MovieCard = ({item, onPress}) => {
 const Trending = ({data}) => {
   const navigation = useNavigation();
   const handleClick = item => {
-    navigation.navigate(ROUTES.MOVIE_DETAILS, item);
+    navigation.navigate(ROUTES.ANIME_DETAILS, item);
   };
   return (
     <View className="mb-8">
@@ -46,7 +46,7 @@ const Trending = ({data}) => {
 
       <Carousel
         data={data}
-        renderItem={({item}) => <MovieCard item={item} onPress={handleClick} />}
+        renderItem={({item}) => <Card item={item} onPress={handleClick} />}
         firstItem={1}
         inactiveSlideOpacity={0.6}
         sliderWidth={width}

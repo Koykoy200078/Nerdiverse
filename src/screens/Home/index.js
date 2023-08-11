@@ -15,8 +15,8 @@ import {
 import {Icons} from '../../configs/icons';
 import {ScrollView} from 'react-native-gesture-handler';
 
-import Trending from '../../components/Movies/trending';
-import List from '../../components/Movies/list';
+import Trending from '../../components/Anime/trending';
+import List from '../../components/Anime/list';
 import {useNavigation} from '@react-navigation/native';
 import {ROUTES} from '../..';
 
@@ -49,7 +49,7 @@ const Home = () => {
           <Text
             className="text-3xl font-bold"
             style={{color: backgroundStyles.textColor}}>
-            Movies
+            Anime
           </Text>
 
           <TouchableOpacity onPress={() => navigation.navigate(ROUTES.SEARCH)}>

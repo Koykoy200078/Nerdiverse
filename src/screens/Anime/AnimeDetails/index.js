@@ -9,11 +9,11 @@ import LinearGradient from 'react-native-linear-gradient';
 import Watch from '../Watch';
 
 const {width, height} = Dimensions.get('window');
-const MovieDetails = () => {
+const AnimeDetails = () => {
   const {params: item} = useRoute();
   const navigation = useNavigation();
   useEffect(() => {}, [item]);
-  let movieName = 'One Piece';
+  let animeName = 'One Piece';
   return (
     <ScrollView
       style={{
@@ -66,7 +66,7 @@ const MovieDetails = () => {
         <Text
           className="text-center text-3xl font-bold tracking-wider"
           style={{color: backgroundStyles.textColor}}>
-          {movieName}
+          {animeName}
         </Text>
         <Text
           className="text-center text-base font-semibold"
@@ -112,4 +112,4 @@ const MovieDetails = () => {
   );
 };
 
-export default MovieDetails;
+export default AnimeDetails;

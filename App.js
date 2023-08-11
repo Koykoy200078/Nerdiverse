@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, StatusBar} from 'react-native';
-import {AppNav, backgroundStyles, isDarkMode} from './src';
+import {AppNav, backgroundStyles} from './src';
+import {isDarkMode} from './src/configs/backgroundStyles';
 
 const App = () => {
   return (

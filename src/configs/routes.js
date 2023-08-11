@@ -5,5 +5,6 @@ export default {
   HOME: 'Home',
   SEARCH: 'Search',
 
+  ANIME_DETAILS: 'Anime Details',
   MOVIE_DETAILS: 'Movie Details',
 };

@@ -6,7 +6,7 @@ import {
   createStackNavigator,
 } from '@react-navigation/stack';
 
-import {Home, MovieDetails, ROUTES, Search} from '..';
+import {AnimeDetails, Home, ROUTES, Search} from '..';
 
 const options = {
   headerShown: false,
@@ -53,7 +53,7 @@ function Main() {
     <MainStack.Navigator initialRouteName={ROUTES.HOME} screenOptions={options}>
       <MainStack.Screen name={ROUTES.HOME} component={Home} />
       <MainStack.Screen name={ROUTES.SEARCH} component={Search} />
-      <MainStack.Screen name={ROUTES.MOVIE_DETAILS} component={MovieDetails} />
+      <MainStack.Screen name={ROUTES.ANIME_DETAILS} component={AnimeDetails} />
     </MainStack.Navigator>
   );
 }
